@@ -340,4 +340,4 @@ ASALocalRun/
 healthchecksdb
 
 # ingnore our setting files customized
-/Kinzk5/appsettings.json
+appsettings.json
