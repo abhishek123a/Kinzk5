@@ -18,4 +18,10 @@
     <ProjectReference Include="..\Shared\Kinzk5.Shared.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="library\global\plugins\angularjs\plugins\angular-file-upload\uploads\" />
+    <Folder Include="library\global\plugins\jquery-file-upload\server\php\files\thumbnail\" />
+    <Folder Include="library\js\plugins\Views\" />
+  </ItemGroup>
+
 </Project>

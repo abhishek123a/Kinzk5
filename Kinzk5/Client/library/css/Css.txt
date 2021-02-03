@@ -1,0 +1,49 @@
+ @*<link href="~/library/css/plugins/bootstrap-switch.min.css" rel="stylesheet" />
+        <link href="~/library/css/plugins/bootstrap.min.css" rel="stylesheet" />
+        <link href="~/library/css/plugins/custom.min.css" rel="stylesheet" />
+        <link href="~/library/css/plugins/darkblue.min.css" rel="stylesheet" />
+        <link href="~/library/css/plugins/components.min.css" rel="stylesheet" />
+        <link href="~/library/css/plugins/daterangepicker.min.css" rel="stylesheet" />
+        <link href="~/library/css/plugins/font-awesome.min.css" rel="stylesheet" />
+        <link href="~/library/css/plugins/fullcalendar.min.css" rel="stylesheet" />
+        <link href="~/library/css/plugins/jqvmap.css" rel="stylesheet" />
+        <link href="~/library/css/plugins/layout.min.css" rel="stylesheet" />
+        <link href="~/library/css/plugins/morris.css" rel="stylesheet" />
+        <link href="~/library/css/plugins/plugins.min.css" rel="stylesheet" />
+        <link href="~/library/css/plugins/simple-line-icons.min.css" rel="stylesheet" />
+
+        <link href="~/library/css/plugins/login.min.css" rel="stylesheet" />
+        <link href="~/library/css/plugins/select2.min.css" rel="stylesheet" />
+        <link href="~/library/css/plugins/select2-bootstrap.min.css" rel="stylesheet" />
+        <link href="~/library/css/plugins/lock.min.css" rel="stylesheet" />
+        <link href="~/library/css/common/custom-elements.css" rel="stylesheet" />
+        <link href="~/library/css/common/animate.css" rel="stylesheet" />
+        <link href="~/library/css/common/custom-variables.css" rel="stylesheet" />
+        <link href="~/library/css/common/animate.css" rel="stylesheet" />*@
+
+
+
+
+
+
+
+
+
+    @*<meta content="" name="author">
+    <link href="~/library/css/plugins/css.css" rel="stylesheet" />
+    <link href="~/library/css/plugins/bootstrap-switch.min.css" rel="stylesheet" />
+    <link href="~/library/css/plugins/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/library/css/plugins/custom.min.css" rel="stylesheet" />
+
+    <link href="~/library/css/plugins/darkblue.min.css" rel="stylesheet" />
+    <link href="~/library/css/plugins/components.min.css" rel="stylesheet" />
+    <link href="~/library/css/plugins/daterangepicker.min.css" rel="stylesheet" />
+    <link href="~/library/css/plugins/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/library/css/plugins/fullcalendar.min.css" rel="stylesheet" />
+        <link href="~/library/css/plugins/jqvmap.css" rel="stylesheet" />
+    <link href="~/library/css/plugins/layout.min.css" rel="stylesheet" />
+    <link href="~/library/css/plugins/morris.css" rel="stylesheet" />
+    <link href="~/library/css/plugins/plugins.min.css" rel="stylesheet" />
+    <link href="~/library/css/plugins/simple-line-icons.min.css" rel="stylesheet" />
+    <link href="~/library/css/common/custom-elements.css" rel="stylesheet" />
+    <link href="~/library/css/common/animate.css" rel="stylesheet" />*@

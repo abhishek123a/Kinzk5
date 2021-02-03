@@ -1,0 +1,597 @@
+﻿@import "../common/_rootPaths.less";
+@import "../bootstrap/mixins.less";
+@import "../common/custom-variables.less";
+@import "../common/custom-mixins.less";
+/* -----------------------------------------
+   Header styles
+----------------------------------------- */
+#header
+{
+    .navbar
+    {
+        .navbar-brand
+        {
+            .text-logo-element
+            {
+                margin-left: 20px;
+            }
+
+            .text-logo, .text-slogan
+            {
+                font-size: 20px;
+            }
+
+            .text-logo
+            {
+                text-transform: none;
+            }
+        }
+    }
+}
+
+/* -----------------------------------------
+   Body styles
+----------------------------------------- */
+body
+{
+    &.login-page
+    {
+        #login
+        {
+            #logo
+            {
+                position: absolute;
+                top: -75px;
+                left: 50%;
+                margin-left: -125px; /* width of the logo devided by 2 */
+                .text-logo-element
+                {
+                    font-size: 32px;
+                    color: darken(@mainColor, 35%);
+                    margin-left: 34px;
+                    margin-right: 10px;
+                    margin-top: -8px;
+                }
+
+                .text-logo,
+                .text-slogan
+                {
+                    font-weight: bold;
+                    font-family: 'Droid Sans';
+                    font-size: 24px;
+                    text-transform: uppercase;
+                    margin-top: 15px;
+                    display: inline-block;
+                }
+
+                .text-logo
+                {
+                    color: darken(@mainColor, 45%);
+                    text-transform: none;
+                }
+
+                .text-slogan
+                {
+                    color: @white;
+                }
+            }
+        }
+    }
+}
+
+/* -----------------------------------------
+   Validation styles
+----------------------------------------- */
+.custom-error-block
+{
+    display: block; // account for any element using help-block
+    margin-top: 5px;
+    margin-bottom: 10px;
+    //color: lighten(@text-color, 25%); // lighten the text some for contrast
+    font-weight: bold;
+}
+
+span.field-validation-error
+{
+    span.custom-error-block
+    {
+        font-weight: bold;
+    }
+}
+
+.form-horizontal, .form-inline
+{
+    div
+    {
+        &.has-error
+        {
+            .control-label
+            {
+                color: @red;
+            }
+
+            .form-control
+            {
+                border-color: @red;
+
+                &:focus
+                {
+                    border-color: @red;
+                }
+            }
+
+            .help-block, .custom-error-block
+            {
+                color: @red;
+            }
+        }
+
+        &.has-success
+        {
+            .control-label
+            {
+                color: @green;
+            }
+
+            .form-control
+            {
+                border-color: @green;
+
+                &:focus
+                {
+                    border-color: @green;
+                }
+            }
+        }
+    }
+}
+/* -----------------------------------------
+   Cookie Notifications
+----------------------------------------- */
+.eu-cookie-bar-notification
+{
+    display: none;
+    left: 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 100000;
+    background: @sideNavBorderColor;
+    color: #5C5B5B;
+    margin: 0px;
+    height: @headerHeight;
+
+    .content
+    {
+        padding: 0px 10px;
+        margin: 10px 0px;
+        zoom: 1;
+
+        &:after
+        {
+            content: ".";
+            display: block;
+            clear: both;
+            height: 0;
+            font-size: 0;
+            line-height: 0;
+            visibility: hidden;
+        }
+
+        .text
+        {
+            padding-top: 5px;
+            text-align: center;
+        }
+    }
+}
+
+/* -----------------------------------------
+   Datatables
+----------------------------------------- */
+table.table
+{
+    thead
+    {
+        .hasSorting
+        {
+            cursor: pointer;
+
+            i
+            {
+                font-weight: normal;
+                font-style: normal;
+                color: darken(@orange, 15%);
+
+                &:before
+                {
+                    margin-right: 7px;
+                }
+            }
+        }
+    }
+
+    tbody {
+        tr {
+            td {
+                hr {
+                    background-color:@gray-light;
+                    border:0;
+                    height:1px;
+                }
+            }
+        }
+    }
+    &.child-table
+    {
+        thead
+        {
+            tr
+            {
+                background-color: @white;
+
+                th
+                {
+                    border-bottom-width: 1px;
+                }
+            }
+        }
+
+        tbody
+        {
+
+
+            td, tfoot
+            {
+                font-size: 13px;
+            }
+
+            td
+            {
+                border-left: 1px solid @border-color;
+
+                &:first-child
+                {
+                    border-left: none;
+                }
+            }
+        }
+    }
+}
+/* -----------------------------------------
+    Buttons
+----------------------------------------- 
+.btn
+{
+    i
+    {
+        margin-right: 4px;
+    }
+}*/
+/* ------------------ text align helpers --------------------*/
+.tal
+{
+    text-align: left !important;
+}
+
+.tar
+{
+    text-align: right !important;
+}
+/* ------------------ no Border raidus helper --------------------*/
+.nbtlr
+{
+    border-top-left-radius: 0px;
+}
+
+.nbtrr
+{
+    border-top-right-radius: 0px;
+}
+
+.nbblr
+{
+    border-bottom-left-radius: 0px;
+}
+
+.nbbrr
+{
+    border-bottom-right-radius: 0px;
+}
+
+.nbrall
+{
+    border-radius: 0px !important;
+}
+
+/* ------------------ Backgrounds --------------------*/
+.light-gray-bg
+{
+    color: @text-color;
+    background-color: lighten(#f3f5f6,3%);
+}
+
+/* -----------------------------------------
+    Account/Security 
+----------------------------------------- */
+body.login-page
+{
+    #login
+    {
+        .login-wrapper
+        {
+            .select-avatar
+            {
+                border-radius: 4px;
+                width: 52px;
+                height: 52px;
+                margin: 2px;
+                cursor: pointer;
+
+                &.selected
+                {
+                    border: solid 1px @green;
+                }
+            }
+        }
+    }
+}
+/* -----------------------------------------
+    Status & Priority colors
+----------------------------------------- */
+ul.dropdown-menu
+{
+    &.enum-menu
+    {
+        li
+        {
+            a
+            {
+                width: 200px;
+            }
+        }
+    }
+}
+
+.enum
+{
+    i
+    {
+        font-size: 12px;
+        color: @dark;
+
+        &.normal
+        {
+            font-size: 16px;
+        }
+    }
+
+    &.all
+    {
+        .status(@blue, @white)
+    }
+
+    &.draft
+    {
+        .status(@dark, @white)
+    }
+
+    &.pendingapproval, &.pending, &.normal, &.warning, &.open
+    {
+        .status(@orange, @white)
+    }
+
+    &.active, &.delivered, &.medium, &.on
+    {
+        .status(@green, @white)
+    }
+
+    &.archived, &.customclearance, &.fatal, &.intesting
+    {
+        .status(@magenta, @white)
+    }
+
+    &.deleted, &.railout, &.shipout, &.high, &.error, &.off, &.closemanually
+    {
+        .status(@red,@white)
+    }
+
+    &.debug, &.dispatched
+    {
+        .status(@yellow, @white)
+    }
+
+    &.hold
+    {
+        .status(@pink, @white)
+    }
+
+    &.intransit, &.low,&.partiallyinvoiced
+    {
+        .status(@brown, @white)
+    }
+
+    &.information, &.closed, &.invoiced
+    {
+        .status(@teal, @white)
+    }
+}
+/* -----------------------------------------
+    Timelines
+----------------------------------------- */
+.timeline
+{
+    list-style: none;
+    padding-left: 0;
+    position: relative;
+
+    &:after
+    {
+        content: "";
+        height: auto;
+        width: 1px;
+        background: #e3e3e3;
+        position: absolute;
+        top: 5px;
+        left: 30px;
+        bottom: 25px;
+    }
+
+
+    &.timeline-icons li
+    {
+        padding-top: 2px;
+
+        &:after
+        {
+            width: 32px;
+            height: 32px;
+            background: #fff;
+            border: 1px solid #e3e3e3;
+            left: 14px;
+            top: 0;
+            z-index: 11;
+        }
+
+        .timeline-icon
+        {
+            position: absolute;
+            left: 25px;
+            top: 7px;
+            z-index: 12;
+            font-weight: bold;
+            color: #FFF;
+            font-size: 85%;
+        }
+    }
+
+    li
+    {
+        position: relative;
+        padding-left: 60px;
+        margin-bottom: 15px;
+
+        &:after
+        {
+            content: "";
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #e3e3e3;
+            position: absolute;
+            left: 24px;
+            top: 5px;
+        }
+
+        .timeline-date
+        {
+            display: inline-block;
+            width: 100%;
+            color: #a6a6a6;
+            font-style: italic;
+        }
+
+        p
+        {
+            font-size: 13px;
+        }
+    }
+}
+/* ------------------ Todo widget --------------------*/
+.todo-widget.orders, .todo-widget.invoices
+{
+    .todo-period
+    {
+        font-size: 14px;
+    }
+
+    .todo-list
+    {
+        .todo-task-item
+        {
+            .todo-category
+            {
+                float: right;
+                margin-right: 18px;
+            }
+
+            .todo-task-text
+            {
+                a {
+                    color:@text-color;
+                    &:hover {
+                        color:@blue;
+                    }
+                }
+                .small
+                {
+                    font-weight: normal;
+                }
+            }
+        }
+    }
+}
+
+.todo-widget.invoices {
+    .todo-list
+    {
+        .todo-task-item
+        {
+            &:first-child {
+                border-top:none;
+            }
+        }
+    }
+}
+/* ------------------ labels as per document type --------------------*/
+.todo-widget
+{
+    .todo-list
+    {
+        .todo-task-item
+        {
+            &.pdf
+            {
+                .fileextension(@red);
+            }
+
+            &.docx, &.doc, &.xlsx, &.xls
+            {
+                .fileextension(@green);
+            }
+
+            &.jpeg, &.jpg, &.gif, &.png
+            {
+                .fileextension(@purple);
+            }
+        }
+    }
+}
+/* ------------------ Recent users widget --------------------*/
+ul.chat-widget{
+    li.chat-user{
+        &:nth-child(even) {
+            background:@gray-spr;
+            .status {background: @gray-spr;}
+        }
+        &:hover {
+            background: darken(@gray-spr, 5%);
+            .status {background: darken(@gray-spr, 5%);}
+        }
+        .internal {
+                position: absolute;
+                left: 41px;
+                top: 38px;
+                color: @red;
+                background: @white;
+                width: 16px;
+                height: 16px;
+                border-radius: 16px;
+                i {
+                    font-size: 36px;
+                    margin-top: -10px;
+                    margin-left: -10px;
+                }
+            }
+    }
+}
