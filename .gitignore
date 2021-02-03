@@ -338,3 +338,6 @@ ASALocalRun/
 
 # BeatPulse healthcheck temp database
 healthchecksdb
+
+# ingnore our setting files customized
+/Kinzk5/appsettings.json
