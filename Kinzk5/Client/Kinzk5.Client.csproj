@@ -6,6 +6,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="library\**" />
+    <Content Remove="library\**" />
+    <EmbeddedResource Remove="library\**" />
+    <None Remove="library\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Components.Authorization" Version="3.1.5" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="3.2.1" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Build" Version="3.2.1" PrivateAssets="all" />
@@ -16,12 +23,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Shared\Kinzk5.Shared.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="library\global\plugins\angularjs\plugins\angular-file-upload\uploads\" />
-    <Folder Include="library\global\plugins\jquery-file-upload\server\php\files\thumbnail\" />
-    <Folder Include="library\js\plugins\Views\" />
   </ItemGroup>
 
 </Project>
