@@ -31,7 +31,7 @@ namespace Kinzk5.Client.Pages.Authentication
             try
             {
                 await authStateProvider.Login(loginModel);
-               // var pp = await authStateProvider.CurrentUserInfo();
+                //var pp = await authStateProvider.CurrentUserInfo();
                 navigationManager.NavigateTo("/");
             }
             catch (Exception ex)
